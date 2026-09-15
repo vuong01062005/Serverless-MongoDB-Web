@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background: #eef4f1;
+  color: #18332b;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #4e8b74;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+h1 {
+  color: #18332b;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  line-height: 1.15;
+}
+
+.loading,
+.error,
+.empty {
+  text-align: center;
+  font-size: 18px;
+  margin: 40px 0;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.product-form {
+  align-items: end;
+  background: #ffffff;
+  border: 1px solid #d9e5df;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(24, 51, 43, 0.06);
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.5fr 1fr 1fr auto;
+  margin-bottom: 28px;
+  padding: 22px;
+}
+
+.form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.form-field label {
+  color: #426257;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-field input {
+  border: 1px solid #c9d9d1;
+  border-radius: 6px;
+  color: #18332b;
+  font: inherit;
+  min-width: 0;
+  padding: 11px 12px;
+}
+
+.form-field input:focus {
+  border-color: #4e8b74;
+  outline: 3px solid rgba(78, 139, 116, 0.16);
+}
+
+.table-wrapper {
+  background: #ffffff;
+  border: 1px solid #d9e5df;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(24, 51, 43, 0.06);
+  overflow-x: auto;
+}
+
+.product-table {
+  border-collapse: collapse;
+  min-width: 700px;
+  width: 100%;
+}
+
+.product-table th,
+.product-table td {
+  border-bottom: 1px solid #e5eee9;
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.product-table th {
+  background: #f5f9f7;
+  color: #557066;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.product-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.product-name {
+  font-weight: 700;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.btn-add {
+  background: #236b52;
+  color: white;
+}
+
+.btn-edit {
+  background: #f59e0b;
+  color: white;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 36px 16px;
+  }
+
+  .product-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-form .btn-add {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .product-form {
+    grid-template-columns: 1fr;
+  }
+}
